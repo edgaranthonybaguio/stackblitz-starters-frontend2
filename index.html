@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 Study Planner</h1>
+
+      <h2>Add New Task</h2>
+      <form id="taskForm" class="form">
+        <input type="text" id="subject" placeholder="Subject" required />
+        <input type="text" id="title" placeholder="Task Title" required />
+        <input type="date" id="deadline" required />
+        <button type="submit">Add Task</button>
+      </form>
+
+      <h2>All Tasks</h2>
+
+      <!-- Progress Stats -->
+      <div class="stats">
+        <h3>Progress</h3>
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <p id="statsText">Loading stats...</p>
+      </div>
+
+      <button onclick="loadTasks()" class="refresh-btn">Refresh Tasks</button>
+
+      <div id="taskList" class="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
