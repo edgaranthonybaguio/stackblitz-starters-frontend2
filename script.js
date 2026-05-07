@@ -1,7 +1,7 @@
 // --- CONFIGURATION ---
 // Set to '' if the frontend is served by the same Express server.
 // Set to 'http://localhost:3000' if running frontend (e.g., Live Server) and backend separately.
-const BASE_URL = '';
+const BASE_URL = 'https://stackblitz-starters-backend-1.onrender.com';
 const API_URL = `${BASE_URL}/tasks`;
 
 // --- API FUNCTIONS ---
